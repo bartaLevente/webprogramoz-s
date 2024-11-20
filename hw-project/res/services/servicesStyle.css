@@ -1,0 +1,267 @@
+
+h1{
+    font-size: xx-large;
+}
+h4{
+    margin-bottom: 4px;
+}
+.workouts-header{
+    background: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.workouts{
+    width: 70%;
+}
+.workouts > div{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workouts img{
+    width: 70%;
+}
+.img_right{
+    margin-left: 20%;
+}
+.img_left{
+    margin-right: 20%;
+}
+.workout-text{
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid rgb(160, 0, 0);
+    width: 30%;
+    background: white;
+    position: absolute;
+}
+.text-l{
+    left:20%;
+}
+.text-r{
+    right: 20%;
+}
+.btn{
+    background: rgb(160, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 20px;
+	padding: 5px 15px 5px 15px;
+	display: inline-block;
+}
+.btn:hover{
+    background-color: rgb(100, 0, 0);
+}
+hr{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(160, 0, 0);
+    border-width: 0px;
+    border-radius: 2px;
+}
+.parallax{
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+.parallax::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    filter: brightness(0.7);
+    z-index: 1;
+}
+
+.parallax-1::before {
+    background-image: url('./../../media/services/parallax-1.jpg'); 
+    background-size: 130% auto;
+    background-position: center;
+}
+
+
+.parallax-2::before {
+    background-image: url('./../../media/services/parallax-2.jpg'); 
+    background-size: 150% auto;
+    background-position: center top;
+}
+
+.parallaxtext {
+    filter: brightness(1);
+    width: 60%;
+    z-index: 1; 
+}
+.memberships{
+    background: url('./../../media/services/glass-bg-3.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10% 0 10% 0;
+}
+.prices{
+    border-radius: 15px;
+    width: 30%;
+    margin: 0 5% 0 5%;
+    padding: 30px;
+}
+.prices-header{
+    width: 90%;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0;
+    color: rgb(160, 0, 0);
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 700;
+    font-family: 'Roboto';
+    line-height: 1.6em;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.prices ul{
+    color:#fff;
+    width: 90%;
+}
+
+.prices li{
+    
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+}
+
+.triangle{
+    clip-path: polygon(50% 70%, 0 20%, 100% 20%);
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.details-wrapper{
+    color: #fff;
+    background: rgb(50, 50, 50);
+    width: 90%;
+    margin: 10px auto 0 auto;
+    padding: 0px 10px 0px 10px;
+}
+
+.dropdown-content {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.dropdown-content p{
+    margin: 10px 0 0 0;
+}
+  
+.triangle.active + #membershipContent {
+display: block;
+}
+
+.contact{
+    background: url('./../../media/services/glass-bg-1.jpg');
+    background-size: cover;
+    padding: 50px;
+}
+.contact-wrapper{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.contact-info{
+    color: #fff;
+    width: 50%;
+    background-color: rgb(50, 50, 50);
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-info > div{
+    width: 60%;
+    text-align: center;
+}
+.contact-info-wrapper{
+    margin: auto;
+}
+
+.contact-info p{
+    margin-top: 4px;
+}
+.contact-info img{
+    width: 100%;
+}
+.contact-form{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+}
+form > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form input,textarea,label,button{
+    padding: 10px;
+    width: 90%;
+    border: 1px solid rgb(200,200,200);
+}
+form input{
+    margin-bottom: 5%;
+}
+.form-btn{
+    padding: 30px;
+    margin: 0;
+}
+.contact-form button{
+    width: 40%;
+    padding: 10px;
+}
+form label{
+    text-align: left;
+}
+form textarea{
+    resize: none;
+    height: 16vh;
+}
+.contact-form-wrapper{
+    height: 100%;
+    padding:0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contact-form-wrapper > div{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
